@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "637842305747",
+    "project_id": "inmoapp-2022",
+    "storage_bucket": "inmoapp-2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637842305747:android:71684bd9ea367949735a26",
+        "android_client_info": {
+          "package_name": "co.uts.inmoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637842305747-qo1gdj8k96i5cf924dh01lugb33l6gu5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.uts.inmoapp",
+            "certificate_hash": "597d759b1d56c4ef3421570b15da9dbea3e5099c"
+          }
+        },
+        {
+          "client_id": "637842305747-bu45p4ud4m8p61r03qlpt52a0t7qa7hd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB2MFYGwZhxMsDrhkUe0JRH2XLkVUh2TY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637842305747-bu45p4ud4m8p61r03qlpt52a0t7qa7hd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
