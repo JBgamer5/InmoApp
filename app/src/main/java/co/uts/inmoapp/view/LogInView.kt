@@ -38,22 +38,22 @@ import co.uts.inmoapp.ui.theme.black
 import co.uts.inmoapp.ui.theme.greenBlack
 import co.uts.inmoapp.ui.theme.greenLight
 import co.uts.inmoapp.ui.theme.white
-import co.uts.inmoapp.viewmodel.LoginViewModel
+import co.uts.inmoapp.viewmodel.LogInViewModel
 
 @Preview(showSystemUi = true, uiMode = UI_MODE_NIGHT_NO)
 @Preview(showSystemUi = true, uiMode = UI_MODE_NIGHT_YES)
 @Composable
 private fun Preview() {
     val navController = rememberNavController()
-    val viewModel = LoginViewModel()
+    val viewModel = LogInViewModel()
     LoginView(viewModel, navController)
 }
 
 @Composable
-fun LoginView(viewModel: LoginViewModel, navController: NavController) {
+fun LoginView(viewModel: LogInViewModel, navController: NavController) {
     val context = LocalContext.current
     val focus = LocalFocusManager.current
-    
+
     LoadingComp(isLoading = viewModel.isLoading)
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -88,7 +88,9 @@ fun LoginView(viewModel: LoginViewModel, navController: NavController) {
             )
             Spacer(modifier = Modifier.width(6.dp))
             Button(
-                onClick = {},
+                onClick = {
+                          viewModel.goToRegister(navController)
+                },
                 contentPadding = PaddingValues(0.dp),
                 colors = ButtonDefaults.buttonColors(
                     backgroundColor = Color.Unspecified
@@ -117,7 +119,8 @@ fun LoginView(viewModel: LoginViewModel, navController: NavController) {
                 unfocusedBorderColor = if (isSystemInDarkTheme()) white else Color.Gray,
                 focusedLabelColor = greenLight,
                 focusedBorderColor = greenLight,
-                textColor = if (isSystemInDarkTheme()) white else black
+                textColor = if (isSystemInDarkTheme()) white else black,
+                cursorColor = greenLight
             ),
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Email,
@@ -142,7 +145,8 @@ fun LoginView(viewModel: LoginViewModel, navController: NavController) {
                 unfocusedBorderColor = if (isSystemInDarkTheme()) white else Color.Gray,
                 focusedLabelColor = greenLight,
                 focusedBorderColor = greenLight,
-                textColor = if (isSystemInDarkTheme()) white else black
+                textColor = if (isSystemInDarkTheme()) white else black,
+                cursorColor = greenLight
             ),
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Password,

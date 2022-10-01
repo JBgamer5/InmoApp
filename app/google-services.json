@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "637842305747-qo1gdj8k96i5cf924dh01lugb33l6gu5.apps.googleusercontent.com",
+          "client_id": "637842305747-dubqnvnamj4jmlaidle77elj1k7p26nb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "co.uts.inmoapp",
-            "certificate_hash": "597d759b1d56c4ef3421570b15da9dbea3e5099c"
+            "certificate_hash": "c22642c9164a53802565b71119f44955a0e2a974"
           }
         },
         {
